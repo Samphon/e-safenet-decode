@@ -1,0 +1,29 @@
+{
+  "name": "esafe-encode",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "node app",
+    "dev": "nodemon app",
+    "start-proxy": "chrome app-proxy",
+    "dev-proxy": "chrome app-proxy",
+    "prd": "pm2 start app",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "debug": "^4.1.1",
+    "koa": "^2.7.0",
+    "koa-better-http-proxy": "^0.2.10",
+    "koa-bodyparser": "^4.2.1",
+    "koa-convert": "^1.2.0",
+    "koa-ejs": "^4.3.0",
+    "koa-json": "^2.0.2",
+    "koa-logger": "^3.2.0",
+    "koa-onerror": "^4.1.0",
+    "koa-router": "^7.4.0",
+    "koa-static": "^5.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  }
+}

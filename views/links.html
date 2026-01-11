@@ -1,0 +1,9 @@
+<ul>
+  <% fileList.forEach(item => { %>
+  <li title="<%- item.name%>">
+    <a href="<%- item.path%>" <% if (item.isFile) { %>
+      download <% } %> > <%- item.name%>
+    </a>
+  </li>
+  <% }) %>
+</ul>
